@@ -1,0 +1,26 @@
+{
+    "hero_name": "    ",
+    "hero_xp": 0,
+    "purse": 0,
+    "hero_weapon": 0,
+    "hero_armor": 0,
+    "hero_shield": 0,
+    "herb_count": 0,
+    "key_count": 0,
+    "inventory": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "flag_equip_dragon_scale": false,
+    "flag_equip_warrior_ring": false,
+    "flag_got_death_necklace": false,
+    "flag_beated_golem": false,
+    "flag_beated_dragon": false,
+    "salt": 0
+}

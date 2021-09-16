@@ -1,0 +1,23 @@
+[package]
+name = "dq1-password"
+version = "0.1.0"
+edition = "2018"
+description = "NES Dragon Quest (J) password library"
+readme = "README.md"
+documentation = "https://docs.rs/dq1-password"
+homepage = "https://github.com/taotao54321/dq1-password"
+repository = "https://github.com/taotao54321/dq1-password"
+license = "GPL-3.0-only"
+keywords = ["game", "nes"]
+categories = ["games"]
+
+[dependencies]
+itertools = "0.10.1"
+phf = { version = "0.10.0", features = ["macros"] }
+serde = { version = "1.0.130", features = ["derive"] }
+thiserror = "1.0.29"
+
+[dev-dependencies]
+anyhow = "1.0.44"
+serde_json = "1.0.68"
+structopt = "0.3.23"
