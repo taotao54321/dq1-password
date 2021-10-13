@@ -16,20 +16,20 @@ pub enum Dq1PasswordError {
 }
 
 impl Dq1PasswordError {
-    pub(crate) fn invalid_game_state(msg: impl AsRef<str>) -> Self {
-        Self::InvalidGameState(msg.as_ref().to_owned())
+    pub(crate) fn invalid_game_state(msg: impl Into<String>) -> Self {
+        Self::InvalidGameState(msg.into())
     }
 
-    pub(crate) fn invalid_password(msg: impl AsRef<str>) -> Self {
-        Self::InvalidPassword(msg.as_ref().to_owned())
+    pub(crate) fn invalid_password(msg: impl Into<String>) -> Self {
+        Self::InvalidPassword(msg.into())
     }
 
     pub(crate) fn crc_mismatch(expect: u8, actual: u16) -> Self {
         Self::CrcMismatch { expect, actual }
     }
 
-    pub(crate) fn invalid_pattern(msg: impl AsRef<str>) -> Self {
-        Self::InvalidPattern(msg.as_ref().to_owned())
+    pub(crate) fn invalid_pattern(msg: impl Into<String>) -> Self {
+        Self::InvalidPattern(msg.into())
     }
 }
 
